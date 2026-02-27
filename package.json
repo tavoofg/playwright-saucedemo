@@ -1,0 +1,17 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "Suite de pruebas automatizadas para SauceDemo usando Playwright y Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:login": "cucumber-js --tags @login",
+    "test:cart": "cucumber-js --tags @cart",
+    "test:checkout": "cucumber-js --tags @checkout"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "playwright": "^1.50.1"
+  }
+}

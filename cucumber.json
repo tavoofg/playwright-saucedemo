@@ -1,0 +1,8 @@
+{
+  "default": {
+    "require": ["src/hooks/*.js", "src/steps/*.js"],
+    "format": ["progress-bar", "html:reports/cucumber-report.html"],
+    "paths": ["src/features/*.feature"],
+    "publishQuiet": true
+  }
+}
