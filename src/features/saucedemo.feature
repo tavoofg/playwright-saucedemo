@@ -32,6 +32,6 @@ Feature: SauceDemo - Flujo de Compra
     And el usuario agrega un producto al carrito
     And el usuario va al carrito
     And el usuario procede al checkout
-    And el usuario completa la información de envío
+    And el usuario completa la información de envío con "QA Test" "User" "15001"
     And el usuario finaliza la compra
     Then el usuario debería ver el mensaje de confirmación

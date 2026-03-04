@@ -76,6 +76,15 @@ npm run test:cart
 npm run test:checkout
 ```
 
+### Ejecutar con navegador visible (modo debug):
+```bash
+# bash/Linux/Mac
+HEADLESS=false npm test
+
+# PowerShell (Windows)
+$env:HEADLESS="false"; npm test
+```
+
 ## Reporte
 
 Al ejecutar los tests se genera un reporte HTML en:

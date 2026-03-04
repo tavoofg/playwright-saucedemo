@@ -49,8 +49,8 @@ When('el usuario procede al checkout', async function () {
     this.checkoutPage = new CheckoutPage(this.page);
 });
 
-When('el usuario completa la información de envío', async function () {
-    await this.checkoutPage.fillShippingInfo('Gustavo', 'QA', '15001');
+When('el usuario completa la información de envío con {string} {string} {string}', async function (firstName, lastName, postalCode) {
+    await this.checkoutPage.fillShippingInfo(firstName, lastName, postalCode);
     await this.checkoutPage.clickContinue();
 });
 
